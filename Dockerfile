@@ -1,3 +1,3 @@
 FROM openjdk:21
-ADD target/jenkinstest.jar devops-integration.jar
+ADD target/jenkinstest.jar jenkinstest.jar
 ENTRYPOINT ["java", "-jar", "/jenkinstest.jar"]
