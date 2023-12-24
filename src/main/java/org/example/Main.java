@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 public class Main {
 
+
     @GetMapping("/api")
     public String message(){
         return "Hello world";
