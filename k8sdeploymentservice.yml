@@ -27,8 +27,7 @@ metadata:
   name: spring-boot-k8-service
 spec:
   selector:
-    matchLabels:
-      app: spring-boot-k8s
+    app: spring-boot-k8s
   ports:
     - protocol: "TCP"
       port: 8100
