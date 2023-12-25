@@ -10,6 +10,11 @@ pipeline {
                 bat 'mvn clean install'
             }
         }
+        stage('Test Application'){
+            steps {
+                bat 'mvn test'
+            }
+        }
         stage('Build Docker Image'){
             steps {
                 script{
@@ -22,6 +27,13 @@ pipeline {
                 script {
                     bat 'docker login -u root2codegunz -p Nuke202400'
                     bat 'docker push root2codegunz/jenkinstest'
+                }
+            }
+        }
+        stage('Deploy to k8s'){
+            steps {
+                script {
+                    kubernetesDeploy (configs: 'deploymentservice.yml', kubeconfigId: 'k8sconfigpwd')
                 }
             }
         }
