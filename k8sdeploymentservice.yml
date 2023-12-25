@@ -6,18 +6,18 @@ spec:
   selector:
     matchLabels:
         app: spring-boot-k8s
-    replicas: 2
-    template:
-        metadata:
-          labels:
-            app: spring-boot-k8s
-        spec:
-          containers:
-            - name: spring-boot-k8s
-              image: root2codegunz/jenkinstest
-              imagePullPolicy: IfNotPresent
-              ports:
-                - containerPort: 8100
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: spring-boot-k8s
+    spec:
+      containers:
+        - name: spring-boot-k8s
+          image: root2codegunz/jenkinstest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8100
 
 ---
 
