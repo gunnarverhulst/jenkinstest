@@ -15,6 +15,11 @@ public class Main {
         return "Hello world";
     }
 
+    @GetMapping("/api/Gunz")
+    public String helloFromGunz(){
+        return "Hello From Gunz";
+    }
+
     public static void main(String[] args) {
         SpringApplication.run(Main.class, args);
     }
