@@ -16,8 +16,8 @@ public class Main {
     }
 
     @GetMapping("/api/Gunz")
-    public String helloFromGunz(){
-        return "Hello From Gunz";
+    public String helloWorldFromGunz(){
+        return "Hello World From Gunz";
     }
 
     public static void main(String[] args) {
