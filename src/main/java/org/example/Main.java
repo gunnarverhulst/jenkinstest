@@ -11,7 +11,7 @@ public class Main {
 
 
     @GetMapping("/api")
-    public String message(){
+    public String helloWorld(){
         return "Hello world";
     }
 
