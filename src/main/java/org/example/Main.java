@@ -12,12 +12,7 @@ public class Main {
 
     @GetMapping("/api")
     public String helloWorld(){
-        return "Hello world";
-    }
-
-    @GetMapping("/api/Gunz")
-    public String helloWorldFromGunz(){
-        return "Hello World From Gunz";
+        return "Hello Gunz!!";
     }
 
     public static void main(String[] args) {
